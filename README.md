@@ -1,4 +1,3 @@
-#mcwt-web
-Website created for the 2018-19 MCWT Advanced Website Design Competition, won 1st place in the competition. The site's purpose was to show demonstration of HTML and CSS skills and unique design skills, so no frameworks were used. 
+This is the 1st place winning website of the 2018-19 MCWT Advanced Website Design Competition. The purpose of this site was to show demonstration of HTML and CSS skills and unique design skills, so no frameworks were used. 
 
 
