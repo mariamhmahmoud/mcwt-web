@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--required for hamburger menu-->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        
+        
+        
+    <title>A Week Without Technology</title>
+        
+    </head>
+    
+    <style type = "text/css">
+        
+     @import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Raleway');
+        
+        @font-face {
+    font-family: "Roseline";
+    src: url("Roseline.ttf") format("truetype");
+             }
+        
+        * {
+            box-sizing:border-box;
+        }
+        
+        @font-face {
+            font-family: "Muli";
+            src: url("https://fonts.google.com")
+        }
+        
+        
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        figcaption {
+            line-height: 2.0;
+            margin-left: 10%;
+            margin-right: 10%;
+            font-size: 19px;
+            font-family: 'Raleway', sans-serif;
+        }
+        
+        p {
+            line-height: 2.0;
+            margin-left:  10%;
+            margin-right: 10%;
+            font-size: 19px;
+            font-family: 'Raleway', sans-serif; 
+            margin-top: 0px;
+        }
+        
+        /*nav begins*/
+
+        .navigation {
+            text-align: center; 
+            width: 100%;
+            background-color: #101010;
+            box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            height: 110px;
+            font-family: 'Raleway';
+            padding: 5px;
+        }
+    
+
+        .navigation a {
+            text-decoration: none;
+            color: white;
+            padding: 30px;
+            font-weight: bold;
+            display: inline-block;
+        }
+        
+
+        .navigation a:hover {
+            color: #CBAFB3;
+            transition: all .5s ease;
+        }
+
+        .navigation .icon {
+            display: none;
+        }
+
+        @media screen and (max-width: 1050px) {
+            .navigation a {display: none;}
+            .navigation a.icon {
+            float: right;
+            display: block;
+            font-size: 30px;
+            }
+        }
+
+        @media screen and (max-width: 1050px) {
+            .navigation.responsive {
+                position: relative;
+                margin-bottom: 15%;
+            }
+            
+            .navigation.responsive .icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+    }
+            
+    .navigation.responsive a {
+        float: none;
+        display: block;
+        text-align: center;
+        background-color: black;
+        }
+    }
+        /*nav end*/
+        
+        
+        hr {
+            border:none;
+            border-top:2px dotted black;
+            color:#fff;
+            background-color:#fff;
+            height:0px;
+            width:75%;
+            margin-bottom: 40px;
+            margin-top: 50px;
+        }
+        
+        .toppage {
+            box-sizing: border-box;
+            background: url("images/planner.JPG") no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            background-size: cover;
+            min-width:250px;
+            color: #fff;
+            padding-top: 112px;
+            min-height: 750px;
+            letter-spacing: 2px;
+            font-family: "Montserrat", sans-serif;
+            margin-bottom:;
+        }
+        
+        .text {
+            font-size: 60px;
+            font-weight: bold;
+            margin-left: 50px;
+            margin-right: 1000px;
+        }
+        
+        .image {
+            height: 100%;
+            float: right;
+            width: 20%;
+        }
+        
+        .image2 {
+            height: 100%;
+            float: left;
+            width: 20%;
+        }
+        
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            height: 500px;
+        }
+        
+
+        @media screen and (max-width: 800px) {
+            .image {
+                width: 35%;
+            }  
+            
+            p {
+                font-size: 16px;
+            }
+        }
+        
+        #second {
+            line-height: 2.0;
+            margin-right: 2%;
+            margin-left: 20%;
+            font-size: 18px;
+            font-family: 'Raleway', sans-serif; 
+        }
+        
+        #first {
+            line-height: 2.0;
+            margin-left: 2%;
+            margin-right: 20%;
+            font-size: 18px;
+            font-family: 'Raleway', sans-serif; 
+        }
+        
+        .centered {
+            text-align: center;
+        }
+
+        .days {
+            color: black;
+            padding: 5px;
+            width: 12%;
+            display: inline-block;
+            list-style-type: none;
+            border: none;
+            background-color: white;
+            color: black;
+            font-size: 19px;
+        }
+        
+        .days:hover {
+            color: #F8E3EA
+        }
+
+        .text {
+            font-size: 50px;
+            font-weight: bold;
+            margin-left: 5%;
+            margin-right: 55%;
+        }
+
+        .outer-foot {
+            background-color: #101010;
+            height: 350px;
+            box-shadow: 8px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            margin-bottom: 0px;
+            margin-top: 100px;
+            color: white; 
+            position: ;
+        }
+        
+        .foot {
+            text-align: center;
+            font-family: Raleway;
+            padding-top: 50px;
+        }
+        
+        @media screen and (max-width: 800px) {
+            .outer-foot {
+                height: 450px;
+            }
+        }
+        
+        @media screen and (max-width: 600px) {
+            .outer-foot {
+            height: 550px;
+        }
+         .text {
+                font-size: 35px;
+                margin-top: 100px;;
+            }
+        }
+        
+        @media screen and (max-width: 500px) {
+            .toppage {
+                background-color: #282626;
+                background-image: none;
+            }
+        }
+        
+        .active {
+            color: lightskyblue;
+        }
+=
+        .every {
+            padding: 0px;
+        }
+        
+        .every:hover {
+            color: #F8E3EA;
+        }
+        
+        
+        .bottom {
+            line-height: 2.0;
+            margin-left: 200px;
+            margin-right: 200px;
+            font-size: 19px;
+            font-family: 'Raleway', sans-serif; 
+        }
+        
+         @media screen and (max-width: 1350px) {
+            #first, #second {
+                font-size: 15px;
+             }
+        }
+        
+        
+        @media screen and (max-width: 1100px) {
+            #first, #second {
+                font-size: 13px;
+             }
+        }
+        
+        @media screen and (max-width: 800px) {
+        .card{
+                height: 750px;
+            }
+        
+        .image {
+            height: 50%;
+            margin-top: 20%;
+        }
+        
+        .image2 {
+            height: 50%;
+            margin-top: 20%;
+            margin-left: 20px;
+        }
+    }
+        
+        @media screen and (max-width: 700px) {
+            a {
+                padding: 20px;
+        }
+        }
+            
+                
+        @media screen and (max-width: 520px) {
+            .card {
+                height: 950px;
+        }
+            
+            .image1 {
+                width: 30%;
+            }
+            
+            .image2 {
+                width: 30%;
+            }
+            
+            .footer {
+                font-size: 19px;
+            }
+            }  
+        
+        
+      .active {
+            color: lightskyblue;
+        }
+
+        
+    </style>
+    <body>
+        <header>
+        <div class="navigation" id="myNavigation">
+  <a href="index.html" class="active">HOME</a>
+  <a href="journal.html">WEEK'S JOURNAL</a>
+  <a href="summary.html">SUMMARY OF THE WEEK</a>
+  <a href="learnings.html">LESSONS</a>
+    <a href="resources.html">RESOURCES</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+        </header>
+        
+                <div class="toppage" alt="Planner" title="Planner">
+                    <br>
+                    <br>
+            <p class="text"><strong>A WEEK WITHOUT DIGITAL TECHNOLOGY: JOURNAL</strong></p>
+           </div>
+        
+        <div class = "centered">
+            <a class = "days" href ="#firstday">Day 1</a>
+            <a class = "days" href ="#secondday">Day 2</a>
+            <a class = "days" href ="#thirdday">Day 3</a>
+            <a class = "days" href ="#fourthday">Day 4</a>
+            <a class = "days" href ="#fifthday">Day 5</a>
+            <a class = "days" href ="#sixthday">Day 6</a>
+            <a class = "days" href ="#seventhday">Day 7</a>
+        </div>
+        
+        <br>
+        <div class="card">
+            <img class = "image" src="images/1.jpeg" alt="Day 1" title = "Day 1">
+            <a name="firstday"></a>
+                <p id="first">Ok, I don't know whose idea this was to shut the world of from technology, and I don't know if they thought this was a good idea or just some sort of "all this power has gone to my head - control game", but this is ridiculous! How am I ever going to get anything done??? Maybe there is a zombie apocalypse on the verge of taking over the world and word hasn't gotten out yet, and this is the "powers that be" way of slowing down the information flow. I know, I tend to be a little dramatic.... but seriously!?!?!?!? I repeat... how am I ever going to get anything done??? I need my laptop and my phone to do my homework, talk to my friends, and plan my day - my life! I'm getting hungry. I wonder what mom is making for dinner. I guess I will have to wait and see because SOMEBODY decided that people shouldn't text their MOTHERS.  But, on the brighter side, there is electricity so I can use my computer to write my English paper and Physics Lab that is due on Friday.
+</p></div>
+        <br>
+        
+        <div class="card">
+            <img class = "image2" src="images/2.jpeg" alt="Day 2" title = "Day 2">
+            <a name="secondday"></a>
+                            <p  class = "journal-long" id = "second">I woke up this morning actually feeling a little panicked by the fact that I do not have cell phone service. My first instinct was to text my friends or my mom and complain. Breakfast was a little strange, too. Every morning, before school, my mom will make my dad, my brother and me breakfast, which she still did this morning. But, today, as we all sat at the table, it was actually a little awkward. My dad usually catches up on his Clash of Clans game before work - I always make fun of him and tell him he is obsessed with that game. He acted like it was no big deal that he couldn't play. But I knew he was secretly perturbed. My brother asked if he needed to wear a coat today, and naturally, my mom went for her phone to check the weather, but caught herself and told him to at least bring a light jacket just in case. School was also a little weird and some people were downright agitated all day long! Maybe this addiction to cell phones/technology you hear people talk about is actually a thing!  But, on the brighter side, my physics teacher could not assign the 100+ problems that she always has us do when we start a new unit because the program with the problems is web based. I call that a win! Instead, we are doing more work from the actual textbook which, to be honest, is just fine with me!
+</p></div>
+        <br>
+        
+        <div class="card">
+            <img class = "image" src="images/3.jpeg" alt="Day 3" title = "Day 3">
+                        <a name="thirdday"></a>
+               <p  class = "journal-long" id="first">I have an essay to write for English which requires me to show a relationship between the book we are reading in class and some other big event in history, so guess what that means: I have to actually go to the library, find some resources, read the information there and make copies on a copier. That's so weird to me! I haven't been to a public library in years. The last time I remember going to the library was for "story time" when I was a little kid. My friend and I decided we would go together since we are in the same class, so we had to plan the entire thing during lunch since we couldn't text each other later to confirm the plans. I have to admit, not being able to text has forced me to sit and think about what I need to do and how to plan my time more efficiently. I couldn't just say "I'll text you later". And it was more difficult to get in contact with my mom to let her know I would be home later without a cell phone. Luckily, my family is one of the few households that I know of that still has a home phone because my mom always insisted on having it using the reason "just in case". So I called my mom at work from the home phone to let her know that I would be at the library until 7:30. And honestly, I thought the library was going to be a horrible chore, but to my surprise, I had fun. I learned a lot more about the topics I was researching because I had to look through so many books and read about a bunch of different topics, and I got to spend quality time with my friend without the distraction of our cell phones.
+</p></div>
+        <br>
+        
+                <div class="card">
+            <img class = "image2" src="images/4.jpeg" alt="Day 4" title = "Day 4">
+                    <a name="fourthday"></a>
+                <div class = "journal-long"><p id = "second">I am feeling less tired in the morning. My mom says it's because I am not staying up late watching Netflix. I always argue that nightime is my only down time during the day and that it's my time to watch my favorite show "The Blacklist", which she would argue and say that is why I am so tired in the morning. I do feel more refreshed... maybe she's right? Huh... I'll keep this to myself for now. Today I saw my dad sitting at the table reading a newspaper which was very strange. I have never seen him read a newspaper, but the funny thing is, we get it delivered every day. It would sit on the counter for the day and then go into the recycle bin. My dad said that the news wasn't complete, and it was old news. He absolutely loves news and politics and I can tell that he really misses his news shows that he's always watching on his iPad. My mom also had to pull out her old cookbooks from the basement because she wanted to bake a cake for my cousin's birthday. Usually she just Googles a recipe and uses it. She and I spent some quality time looking through the cookbooks together. We also found some other interesting recipes that we thought we should try, and we also laughed at some recipes because there was actually a recipe on how to make scrambled eggs! Who doesn't know how to do that? Aside from no tecnology though, today was a pretty ordinary day.
+</p></div>
+        </div>
+        <br>
+        
+                <div class="card">
+            <img class = "image" src="images/5.jpeg" alt="Day 5" title = "Day 5">
+                    <a name="fifthday"></a>
+                <div class = "journal"><p id="first">Another day where I feel less sleepy! I had to help my brother print out his homework this morning because his usual way of submitting his work via Google classrooms was not an option. He said that some kids are complaining that they don't have printers at home to print their homework, and the teachers seemed a little frustrated, too. We had an interesting conversation about how expensive ink is for printers and how much paper this one assignment will consume with every kid printing a ten page report to hand in. We are all still getting used to this no digital technology thing. We had to leave early today for school because I needed to track down my coach to see if we were going to meet today. She mentioned something about meeting when we were at work outs last Friday, but she said she would e-mail us to let us know. So inconvenient! My parents were complaining this morning that they better get the world up and running soon because their jobs have been greatly affected - my mom uses web based databases all day long at work since she works for a police department. She was joking that some people are probably getting away with murder ... I hope not!!!
+</p></div>
+        </div>
+        <br>
+        
+                        <div class="card">
+            <img class = "image2" src="images/6.jpeg" alt="Day 6" title = "Day 6">
+                            <a name="sixthday"></a>
+                <div class = "journal"><p id = "second">Yay! I made it through the school week, and in hindsight, it wasn't THAT bad. I do feel like I got less homework this week, but my teachers swear that they did not let this lull of no digital technology affect the quality of our education. Mr. Smith, my history teacher, who is against too much digital technology because he says it is ruining young peoples' minds, gave a big speech about how we have more time on our hands because we are not wasting time on our "devices". That really made me reflect on this past week. Maybe there is some merit to what Mr. Smith was saying... if so, am I wasting a good portion of my life on what he calls "the nonsense of texting and social media"? I wonder how much time I actually spend on my devices... Nonetheless, I do miss my digital technology, and am anxiously waiting to have it back. I still feel disconnected from my friends and the world. But, on the brighter side, my mom was sooooo happy to see my brother laying on the couch reading a book. His usual Fortnite marathons have really taken a hit.</p></div>
+        </div>
+        <br>
+        
+                        <div class="card">
+            <img class = "image" src="images/7.jpeg" alt="Day 7" title = "Day 7">
+                         <a name="seventhday"></a>   
+                <div class = "journal"><p id="first">I made it! In less than an hour, I will have my cell phone, internet, and Netfilx back! Today, my mom took my brother and me to a new restaurant for lunch, but she had a really hard time getting there without her trusty GPS. My mom is horrible with directions, and what was even more frustrating for her was she couldn't pick up her cell phone and call my dad to ask for help. We had to pull into a gas station and ask the person working there if they knew how to get to the restaurant, and luckily, they did. My dad didn't come with us because he was trying to call his family overseas to check in on my grandparents. So, he had to go to the store to buy a calling card to use from our home phone. He usually uses an app on his phone which is free for phone calls overseas which is amazing since picking up our home phone and dialing direct  costs over $4 per minute! This experience certainly had some pros, but in my opinion, the cons outweighed them. </p></div>
+        </div>
+        
+        <div class = "outer-foot">
+<div class = "foot">
+    <p class = "footer">This website is proudly sponsored by the Michigan Council of Women in Technology Foundation.</p>
+    <br>
+    <p class = "footer">Created by Mariam Mahmoud and Sonali Narayan.</p>
+    <br>
+    <p class = "footer"><a class ="every" href="http://theeverygirl.com/what-i-learned-from-a-week-with-no-technology/" target="_blank">Learn about The Everygirl's week without technology here.</a> </p>
+            </div>
+</div>
+        
+                <script>
+            function myFunction() {
+    var x = document.getElementById("myNavigation");
+    if (x.className === "navigation") {
+        x.className += " responsive";
+    } else {
+        x.className = "navigation";
+    }
+}
+            </script>
+    </body>
+</html>

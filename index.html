@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--required for hamburger menu-->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        
+        
+        
+    <title>A Week Without Technology</title>
+        
+    </head>
+    <style type = "text/css">
+        
+     @import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Raleway');
+        
+        @font-face {
+    font-family: "Roseline";
+    src: url("Roseline.ttf") format("truetype");
+             }
+        
+        * {
+            box-sizing:border-box;
+        }
+        
+        @font-face {
+            font-family: "Muli";
+            src: url("https://fonts.google.com")
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        figcaption {
+            line-height: 2.0;
+            margin-left: 100px;
+            margin-right: 100px;
+            font-size: 16px;
+            font-family: 'Raleway', sans-serif;
+        }
+        
+        .on {
+            color: lightskyblue;
+        }
+        
+        p {
+           line-height: 2.0;
+            margin-left: 10%;
+            margin-right: 10%;
+            font-size: 19px;
+            font-family: 'Raleway', sans-serif; 
+        }
+        
+        /*nav begins*/
+
+        .navigation {
+            text-align: center; 
+            width: 100%;
+            background-color: #101010;
+            box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            height: 110px;
+            font-family: 'Raleway';
+            padding: 5px;
+        }
+    
+
+        .navigation a {
+            text-decoration: none;
+            color: white;
+            padding: 30px;
+            font-weight: bold;
+            display: inline-block;
+        }
+        
+
+        .navigation a:hover {
+            color: #CBAFB3;
+            transition: all .5s ease;
+        }
+
+        .navigation .icon {
+            display: none;
+        }
+
+        @media screen and (max-width: 1050px) {
+            .navigation a {display: none;}
+            .navigation a.icon {
+            float: right;
+            display: block;
+            font-size: 30px;
+            }
+        }
+
+        @media screen and (max-width: 1050px) {
+            .navigation.responsive {
+                position: relative;
+                margin-bottom: 15%;
+            }
+            
+            .navigation.responsive .icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+    }
+            
+    .navigation.responsive a {
+        float: none;
+        display: block;
+        text-align: center;
+        background-color: black;
+        }
+    }
+        /*nav end*/
+        
+        
+        .vid-text {
+            text-align: center;
+            
+        }
+        
+        
+        .vid_content {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%)
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: black;
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        #myVideo {
+            position:static;
+            width: 70%; 
+            margin-left: 15%;
+            margin-right: 15%;
+            height: auto;
+            text-align: center;
+        }
+        
+        
+        
+ 
+        hr {
+            border:none;
+            border-top:2px dotted black;
+            color:#fff;
+            background-color:#fff;
+            height:0px;
+            width:75%;
+            margin-bottom: 40px;
+            margin-top: 50px;
+        }
+    
+        
+        #heading {
+            text-align: center; 
+            font-size: 50px;
+            margin-bottom: 5px;
+            font-family: Raleway;
+        }
+        
+        .twitter-timeline {
+            font-size: 2px;
+        }
+        
+        .sonali {
+            height: 45%;
+            width: 25%;
+            float: left;
+            margin-left: 18%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+        }
+        
+        .mariam {
+            height: 45%;
+            width: 25%;
+            float: right;
+            margin-right: 18%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+        }
+        
+        .sonali:hover {
+            -webkit-filter: grayscale(100%);
+            transition: all .5s ease;
+          }
+        
+        .mariam:hover {
+            -webkit-filter: grayscale(100%);
+            transition: all .5s ease;
+          }
+
+        
+        #sonali-text {
+            float: left;
+            margin: 0 10.5%;
+            text-align: inherit;
+            width: 25%;
+            margin-left: 18%;
+            margin-top: 2%;
+            margin-bottom: 3%;
+
+        }
+        
+        #mariam-text {
+            float: right;
+            margin: 0 1.5%;
+            text-align:justify;
+            width: 25%;
+            margin-right: 18%;
+            margin-top: 2%;
+            margin-bottom: 3%;
+        }
+        
+        .toppage {
+            box-sizing: border-box;
+            background: url("images/record.jpeg") no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            background-size: cover;
+            min-width:250px;
+            color: #fff;
+            padding-top: 150px;
+            min-height: 750px;
+            letter-spacing: 2px;
+            font-family: "Montserrat", sans-serif;
+        }
+        
+        .text {
+            font-size: 50px;
+            font-weight: bold;
+            margin-left: 5%;
+            margin-right: 50%;
+        }
+
+        .outer-foot {
+            background-color: #101010;
+            height: 350px;
+            box-shadow: 8px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            margin-bottom: 0px;
+            margin-top: 850px;
+            color: white; 
+        }
+        
+        .foot {
+            text-align: center;
+            font-family: Raleway;
+            padding-top: 50px;
+        }
+        
+        @media screen and (max-width: 800px) {
+            .outer-foot {
+                height: 450px;
+            }
+        }
+        
+        @media screen and (max-width: 600px) {
+            .outer-foot {
+            height: 550px;
+        }
+            
+            .text {
+                font-size: 35px;
+                margin-top: 100px;;
+            }
+            
+            
+        }
+        
+         @media screen and (max-width: 500px) {
+            .toppage {
+                background-color: #e8b706;
+                background-image: none;
+            }
+        }
+        
+        .everygirl {
+            font-family: Raleway;
+            padding: 0px;
+        }
+        
+        .centered {
+            margin-left: 15%;
+            margin-right: 15%;
+            width: 70%;
+        }
+        
+</style>
+<body>
+    
+<div class="navigation" id="myNavigation">
+  <a href="index.html" class="on">HOME</a>
+  <a href="journal.html">WEEK'S JOURNAL</a>
+  <a href="summary.html">SUMMARY OF THE WEEK</a>
+  <a href="learnings.html">LESSONS</a>
+    <a href="resources.html">RESOURCES</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+        
+                <div class="toppage" alt="Record Player" title = "Record Player">
+            <p class="text"><strong>A WEEK WITHOUT DIGITAL TECHNOLOGY</strong></p>
+           </div>
+        <br>
+        
+        <p>Today, along with drugs and alcohol, digital technology has been labeled as an addiction. It has become such a prevalent issue in today's society that people with the inability to put their technology away are sometimes classified as having IAD (Internet addiction disorder) or IUD (Internet use disorder). This addiction is not recognized in the newest edition of the <em>Diagnostic and Statistical Manual of Mental Disorders</em>, but it is likely that if we continue on this path of not being able to put our technology away, it soon will be a mental disorder.</p>
+        <p>Just like a drug or alcohol addiction, some researchers say that an extensive use of technology can make users feel a sort of "high", and when their technology is taken away, they can begin to feel symptoms of withdrawal.</p>
+        <p>According to reseacher Hilarie Cash, some symptoms of IAD/IUD include: compulsive checking of text messages, loss of interest in activities that do not involve technology, social withdrawal, and feelings of restlessness when not having access to their technology.</p>
+        <p>Technology addiction is a huge issue, so throughout this website, we will be documenting what a week without technology looks like for a high schooler, how it impacts their life, and what can be learned from not having technology for a week.</p>
+        <p>Follow Dr. Kimberly Young's Twitter to keep up with all of the Internet addiction news:</p>
+        <br>
+        <div class = "centered">
+        <a class="twitter-timeline" data-height="500" data-theme="light" href="https://twitter.com/DrKimberlyYoung?ref_src=twsrc%5Etfw">Tweets by DrKimberlyYoung</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+        
+        <hr>
+        <br>
+                <video autoplay loop id="myVideo"> 
+            <source src="notech.mp4"></video>
+        <hr>
+
+        
+  <img src="images/sonali.png" alt="Sonali" title = "Sonali" class="sonali">
+                 <img src = "images/mariam.jpg" class = "mariam" alt="Mariam" title="Mariam">
+
+            <figcaption id = "sonali-text">My name is Sonali, and I was in charge of this website's design. I designed the organizational structure, color scheme, hover effects, fonts, and was in charge of photos and the video on our home page.</figcaption>
+         <figcaption id = "mariam-text">My name is Mariam, and I was in charge of coding the site using HTML, CSS,  minimal JavaScript, and the compiler "Brackets".</figcaption>
+        <br>
+        <br>
+
+        
+        <div class = "outer-foot">
+<div class = "foot">
+    <p>This website is proudly sponsored by the Michigan Council of Women in Technology Foundation.</p>
+    <br>
+    <p>Created by Mariam Mahmoud and Sonali Narayan.</p>
+    <p><a href="http://theeverygirl.com/what-i-learned-from-a-week-with-no-technology/" target="_blank">Learn about The Everygirl's week without technology here.</a> </p>
+            </div>
+</div>
+        <script>
+            function myFunction() {
+    var x = document.getElementById("myNavigation");
+    if (x.className === "navigation") {
+        x.className += " responsive";
+    } else {
+        x.className = "navigation";
+    }
+}
+            </script>
+    </body>
+</html>

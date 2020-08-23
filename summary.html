@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--required for hamburger menu-->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        
+        
+        
+    <title>A Week Without Technology</title>
+        
+    </head>
+    <style type = "text/css">
+        
+     @import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Raleway');
+        
+        @font-face {
+    font-family: "Roseline";
+    src: url("Roseline.ttf") format("truetype");
+             }
+        
+        * {
+            box-sizing:border-box;
+        }
+        
+        @font-face {
+            font-family: "Muli";
+            src: url("https://fonts.google.com")
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        p {
+            line-height: 2.0;
+            margin-left: 10%;
+            margin-right: 10%;
+            font-size: 19px;
+            font-family: 'Raleway', sans-serif; 
+            text-align: center;
+        }
+        
+       /*nav begins*/
+
+        .navigation {
+            text-align: center; 
+            width: 100%;
+            background-color: #101010;
+            box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            height: 110px;
+            font-family: 'Raleway';
+            padding: 5px;
+        }
+    
+
+        .navigation a {
+            text-decoration: none;
+            color: white;
+            padding: 30px;
+            font-weight: bold;
+            display: inline-block;
+        }
+        
+
+        .navigation a:hover {
+            color: #CBAFB3;
+            transition: all .5s ease;
+        }
+
+        .navigation .icon {
+            display: none;
+        }
+
+        @media screen and (max-width: 1050px) {
+            .navigation a {display: none;}
+            .navigation a.icon {
+            float: right;
+            display: block;
+            font-size: 30px;
+            }
+        }
+
+        @media screen and (max-width: 1050px) {
+            .navigation.responsive {
+                position: relative;
+                margin-bottom: 15%;
+            }
+            
+            .navigation.responsive .icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+    }
+            
+    .navigation.responsive a {
+        float: none;
+        display: block;
+        text-align: center;
+        background-color: black;
+        }
+    }
+        /*nav end*/
+        
+        
+        hr {
+            border:none;
+            border-top:2px dotted black;
+            color:#fff;
+            background-color:#fff;
+            height:0px;
+            width:75%;
+            margin-bottom: 40px;
+            margin-top: 50px;
+        }
+        
+        .toppage {
+            box-sizing: border-box;
+            background: url("images/summary.JPG") no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            background-size: cover;
+            min-width:250px;
+            color: #fff;
+            padding-top: 112px;
+            min-height: 750px;
+            letter-spacing: 2px;
+            font-family: "Montserrat", sans-serif;
+            margin-bottom:;
+        }
+        
+        .text {
+            font-size: 50px;
+            font-weight: bold;
+            margin-left: 5%;
+            margin-right: 65%;
+            text-align: left;
+        }
+
+                .outer-foot {
+            background-color: #101010;
+            height: 350px;
+            box-shadow: 8px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            margin-bottom: 0px;
+            margin-top: 100px;
+            color: white; 
+            position: ;
+        }
+        
+        .foot {
+            text-align: center;
+            font-family: Raleway;
+            padding-top: 50px;
+        }
+        
+        @media screen and (max-width: 800px) {
+            .outer-foot {
+                height: 450px;
+            }
+        }
+        
+        @media screen and (max-width: 600px) {
+            .outer-foot {
+            height: 550px;
+        }
+            
+            .text {
+                font-size: 35px;
+                margin-top: 100px;;
+            }
+        }
+        
+        @media screen and (max-width: 500px) {
+            .toppage {
+                background-color: #152642;
+                background-image: none;
+            }
+            .sum 1 {
+                transform: rotate(270deg);
+
+            }
+        }
+        
+        .everygirl {
+            font-family: Raleway;
+            padding: 0px;
+        }
+        
+        #heading {
+            text-align: center;
+            font-size: 35px;
+        }
+        
+        .sum2 {
+            height: 45%;
+            width: 30%;
+            margin-left: 3%;
+            margin-right: 3%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        
+        .sum1 {
+            height: 45%;
+            width: 30%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            transform: rotate(90deg);
+            margin-top: 5%;
+        }
+        
+        .centered {
+            text-align: center;
+        }
+        
+        .topage {
+            padding: 0px;
+            color: black;
+        }
+        
+        .topage:hover {
+            color: blue;
+        }
+        
+    </style>
+    <body>
+        <header>
+        <div class="navigation" id="myNavigation">
+  <a href="index.html" class="active">HOME</a>
+  <a href="journal.html">WEEK'S JOURNAL</a>
+  <a href="summary.html">SUMMARY OF THE WEEK</a>
+  <a href="learnings.html">LESSONS</a>
+    <a href="resources.html">RESOURCES</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+        </header>
+        
+                <div class="toppage" alt="Books" title = "Books">
+            <p class="text"><strong>A WEEK WITHOUT DIGITAL TECHNOLOGY: SUMMARY</strong></p>
+           </div>
+        
+        <div class = "centered">
+        <img src = "images/anastasia.JPG" class = "sum1" alt="Searching for books in the library" title = "Searching for books in the library" >
+        <img src = "images/landline.JPG" class = "sum2" alt="Landline telephone" title = "Landline telephone">
+        <img src = "images/newspaper.JPG" class = "sum1" alt="Dad reading the newspaper" title = "Dad reading the newspaper">
+            </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p>This week was a week of problem-solving. I never realized how much technology had an effect on how I go about my everyday life, but it ended up impacting everything from doing my homework to contacting my mom while she was at work. Some days were more tiring and stressful than other while others were more energetic and relaxing. I'm not going to lie, I missed my technology every day of the week. People will say that it's an addiction, but honestly, in today's world, it's a necessity. Teachers expect students to have access to technology and therefore tailor their lessons to require internet and software access. Parents expect their children to contact them right away when they are doing something because technology now allows for immediate communication. Almost everybody relies on technology to do one thing or another, whether it is to read the news or perform their duties at work. Overall, technology has become such a big part of our lives that it becomes hard to live without it when it is taken away. Nevertheless, I did learn a lot from this week that I can apply to my everyday life. Click <a class ="topage" href = learnings.html style = "text-decoration: underline">here</a> to read about what I took away from this week.</p>
+
+        <div class = "outer-foot">
+<div class = "foot">
+    <p>This website is proudly sponsored by the Michigan Council of Women in Technology Foundation.</p>
+    <br>
+    <p>Created by Mariam Mahmoud and Sonali Narayan.</p>
+    <p><a href="http://theeverygirl.com/what-i-learned-from-a-week-with-no-technology/" target="_blank">Learn about The Everygirl's week without technology here.</a> </p>
+            </div>
+</div>
+        
+         <script>
+            function myFunction() {
+    var x = document.getElementById("myNavigation");
+    if (x.className === "navigation") {
+        x.className += " responsive";
+    } else {
+        x.className = "navigation";
+    }
+}
+            </script>
+    </body>
+</html>
